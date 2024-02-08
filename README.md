@@ -2,7 +2,7 @@
 
 # Technology
 Machine Learning ,
-python , pandas , numpy , scikitlearn,KNN
+python , pandas , numpy , scikitlearn, KNN
 
 # Content Based Filtering
 
