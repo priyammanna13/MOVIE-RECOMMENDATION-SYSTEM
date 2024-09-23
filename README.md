@@ -1,35 +1,63 @@
-# MOVIE-RECOMMENDATION-SYSTEM
+#Content Based Movie Recommendation System
 
-# Technology
-Machine Learning ,
-python , pandas , numpy , scikitlearn, KNN
+## Overview
 
-# Content Based Filtering
+This project is a content-based movie recommendation system that suggests movies based on a user's favorite movie. It utilizes the TMDb API to fetch movie posters and provides a user-friendly interface using Streamlit.
 
-Content based filtering is a technique that uses the features of the items (such as genre, actors, director, etc.) to find the similarity between them and recommend the most similar items to the user. For example, if a user likes a movie that is a comedy and has Will Smith as an actor, the system will recommend other movies that are comedies and have Will Smith as an actor.
+## Features
 
+- **Searchable Dropdown**: Users can type in their favorite movie to get recommendations.
+- **Movie Posters**: Displays posters of recommended movies fetched from the TMDb API.
+- **Cosine Similarity**: Utilizes TF-IDF vectorization and cosine similarity to find similar movies based on various features.
 
-# Cosine Similarity
+## Technologies Used
 
-It is a metric that measures how similar two entities are (like documents or vectors in a multi-dimensional space), irrespective of size. Cosine similarity is widely used in NLP to find similar context words.
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Streamlit
+- Requests
+- TMDb API
 
+## Installation
 
-# Dataset
-The dataset used for this project is the TMDB 5000 Movie Dataset, Metadata on ~5,000 movies from TMDb The dataset also includes movie metadata such as title, genres, release year, etc.
+1. **Clone the Repository**
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
 
-# Code
-The code consists of the following steps:
+2. **Install Required Packages**
+   Ensure you have Python installed, then install the required packages using pip:
+   ```bash
+   pip install pandas numpy scikit-learn streamlit requests
+   ```
 
-Loading and exploring the dataset. Preprocessing the data and creating feature vectors for the movies. Computing the cosine similarity matrix for the movies. Defining a function to generate recommendations for a given movie title. Testing the system with some examples
+3. **API Key**
+   Replace `YOUR_TMDB_API_KEY` in the code with your actual TMDb API key. You can obtain an API key by signing up on [TMDb](https://www.themoviedb.org/).
 
-# Results
-The system is able to generate relevant recommendations for different movie titles based on the content features. For example, for the movie “IRON MAN”, the system recommends the following movies:
+4. **Run the Application**
+   Execute the following command to start the Streamlit app:
+   ```bash
+   streamlit run app.py
+   ```
 
-IRON MAN 2 IRON MAN 3 AVENGERS: AGE OF ULTRON ANT MAN
+## Usage
 
-# Conclusion
-This project demonstrates how to build a simple but effective movie recommender system using content based filtering and cosine similarity. The system can also be extended to use collaborative filtering or hybrid approaches to combine the advantages of both content based and user based methods.
+1. Enter your favorite movie in the dropdown menu.
+2. Click the "Recommend" button to see a list of suggested movies based on your input.
+3. The recommended movies will be displayed along with their posters.
 
-# References
-1. FREECODECAMP
-2. Kaggle
+## Example
+
+![Screenshot](path_to_screenshot.png)  
+*Replace `path_to_screenshot.png` with the actual path of the screenshot of your application.*
+
+## Contributing
+
+If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
