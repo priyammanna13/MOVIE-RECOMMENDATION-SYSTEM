@@ -24,8 +24,8 @@ This project is a content-based movie recommendation system that suggests movies
 
 1. **Clone the Repository**
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/priyammanna13/MOVIE-RECOMMENDATION-SYSTEM.git
+   
    ```
 
 2. **Install Required Packages**
@@ -48,11 +48,6 @@ This project is a content-based movie recommendation system that suggests movies
 1. Enter your favorite movie in the dropdown menu.
 2. Click the "Recommend" button to see a list of suggested movies based on your input.
 3. The recommended movies will be displayed along with their posters.
-
-## Example
-
-![Screenshot](path_to_screenshot.png)  
-*Replace `path_to_screenshot.png` with the actual path of the screenshot of your application.*
 
 ## Contributing
 
